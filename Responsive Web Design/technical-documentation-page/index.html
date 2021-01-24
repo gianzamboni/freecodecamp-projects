@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Technical Documentation Page</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.2/css/all.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main id='main-doc'>
+		<section id="Introduction" class="main-section">
+			<header>Introduction</header>
+			<p>Python is easy to learn, highly readable, and simple to use. It has a clean and english-like syntax which requires less coding and let the programmer focus on the business logic rather than thinking about the nitty-gritty of the language.</p>
+			<p>One of the tools used by Python developers is the Python Interpreter. It operates somewhat like the Unix shell: when called with standard input connected to a tty device, it reads and executes commands interactively; when called with a file name argument or with a file as standard input, it reads and executes a script from that file. In Linux, you need to open a terminal and callit like this:</p>
+      <div class="code-wrapper"><code>python3 [someSript]</code></div>
+		</section>
+
+		<section id="Hello_World" class="main-section">
+			<header>Hello World</header>
+			<p>In your favourite text editor, create a new file, name it <code>hello_world.py</code>, and write the next code:</p>
+      <div class="code-wrapper"><code>print("Hello World")</code></div>
+      <p>Then call the Python 3 Interpreter with this file to see the words "Hello World" printed on the console</p>
+
+		</section>
+		<section id="Variables" class="main-section">
+			<header>Variables</header>
+			<p>In Python, when you need to store some information, you can use variables by giving a name  to some chunk of information. For example, to create a variable called <code>foo</code> that stores the value <code>5</code>, you would need to write something like this:</p>
+      <div class="code-wrapper"><code>foo = 5</code></div>
+      <p>Suppose, now, that you want to add one to this variable and print the result of this operation. Then you would need something like this:</p>
+      <div class="code-wrapper"><code>print(foo + 1)</code></div>
+      <p>Python is dinamically typed, like javascript, this means that you don't have to declare what type each variable is.</p>
+
+      <section id="Lists_and_dictionaries" class="main-section">
+        <header>Lists and dictionaries</header>
+        <p>Lists and dictionaries are mutable data structures provided by python that allow us to describe collections of items.</p>
+        <ul>
+          <li>Lists allows to define ordered collections. Each of its elements can be accessed in sequencial using an index. Here is an example:
+            <div class="code-wrapper"><code>days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]<br>
+            print(days[0])
+            </code></div>
+            You will see the word "Monday" printed on console.
+          </li>
+          <li>Dictionaries defines unordered collection. Each item has an asocciated key which allows to see the stored value. In the next example we ask for John's score which will print on console the number five.
+            <div class="code-wrapper"><code>
+              lastExamScores = {
+                'José': 9,
+                'John': 5,
+                'Alicia': 10
+              }<br>
+              prints(studentsNotes['John'])
+            </code></div>
+          </li>
+		</section>
+		<section id="Loops" class="main-section">
+			<header>Loops</header>
+			<p>When you need to repeat the execution of some lines of code a certain amount of times, Python gives us the option to use loops.</p>
+
+      <p>The are two primitive loops commands: for and while</p>
+      <ul>
+      <li>If you know how many times you need to repeat some action, say ten times, you could use:
+          <div class="code-wrapper"><code>for x in range(0,10):
+          <br>&nbsp print(x)</code></div>
+          This will print the first ten numbers in order.
+      </li>
+      <li>When you dont know the exact times you need to repeat it but you have a condition that must be met to stop, you can use a while loop:
+        <div class="code-wrapper"><code>
+          x = 0<br>
+          while x*x < 1000:<br>
+          &nbsp print(x) <br>
+          &nbsp x = x + 1
+        </code></div>
+        This will print the all the numbers whose square is less than one thousand. Note that, in this case, we need to manually update the variable <code>x</code>.
+      </li>
+
+      <li>The last form of loops allows us to apply some code to each item of a collection, like a list.:
+        <div class="code-wrapper"><code>
+          days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"] <br>
+          for day in days:<br>
+          &nbsp print(day)
+        </code></div>
+        This code will print all the strings in the list <code>days</code>
+      </li>
+</ul>
+
+
+
+		</section>
+	</main>
+  <nav id="navbar">
+    <header>Python 3 Tutorial</header>
+    <div class="section-menu">
+      <a class="nav-link" href='#Introduction'>Introduction</a>
+      <a class="nav-link" href='#Hello_World'>Hello World</a>
+      <a class="nav-link" href='#Variables'>Variables</a>
+      <a class="nav-link" href='#Lists_and_dictionaries'>Lists and dictionaries</a>
+      <a class="nav-link" href='#Loops'>Loops</a>
+    </div>
+  </nav>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+body {
+  font-family: 'Righteous', cursive;
+  background-image: url("http://www.istanbulmehmet.com/wp-content/uploads/2015/05/about1.png");
+}
+
+.center {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-container {
+  background: rgba(25,25,25,50%);
+  border-radius: 5px;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: 5em 5em 5em;
+  grid-row-gap: 0.5em;
+}
+
+.drum-pad {
+  font-family: 'Righteous', cursive;
+  font-size: 1.5em;
+  height: 3em;
+  width: 3em;
+  background: #ddd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.drum-pad:hover {
+  background: #fff;
+}
+
+.drum-pad:focus {
+  outline: none;
+ }
+
+.drum-pad:active {
+ transform: scale(0.75, 0.75);
+}
+
+#display {
+  text-align: center;
+  font-size: 1.5em;
+  color: #ddd;
+  background: #333;
+  padding: 0.5em;
+  border: black solid 3px;
+  border-radius: 5px;
+  width: 5em;
+  height: 1.5em;
+}

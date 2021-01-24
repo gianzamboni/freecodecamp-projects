@@ -1,0 +1,182 @@
+:root{
+  --dosis-family: "Dosis", cursive, sans-serif;
+  --pink-color: hsl(0deg,50%,90%);
+  --dark-pink-color: hsl(0deg,50%,50%);
+  --hover-pink-color: hsl(0deg,50%,70%);
+}
+
+body {
+  background-color: var(--dark-pink-color);
+  font-family: var(--dosis-family);
+}
+
+form {
+  font-size: 1.2vw;
+  padding: 5vh 5vw 5vh 5vw;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px 15px;
+}
+
+footer {
+  padding: 1em 0 1em 0;
+  width: 70vw;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+hr {  
+  background-image: url('https://image.ibb.co/bODLYd/watermelon_Seed.png');
+  background-repeat: repeat-x;
+  border: none;
+  height: 25px;
+  width: 65vw;
+}
+
+input, select, textarea {
+  font-family: var(--dosis-family);
+  font-size:1em;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+input[type="text"], input[type="number"], input[type="email"], input[type="submit"], select, textarea {
+  border: 0px solid;
+  border-radius: 5px;
+  background-color: var(--pink-color);
+}
+
+input[type="submit"] {
+  grid-column: 1/3;
+  width: 50%;
+  margin: 1em 1em 1em 1em;
+  position: relative;
+  left: 22.5%;
+  transition: box-shadow 0.2s, background-color 0.2s;
+  
+}
+
+input[type="submit"]:hover {
+  background-color: var(--hover-pink-color);
+  box-shadow: 1px 1px 5px 0px; 
+}
+
+input[type="submit"]:focus {
+  background-color: var(--hover-pink-color);
+  box-shadow: 1px 1px 10px 0px inset; 
+}
+
+input[type="checkbox"], input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.content-container {
+  width: 70vw;
+  background-color: hsl(93, 50%, 50%);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px;
+}
+
+.first-column-item {
+  text-align: right;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-centered{
+    align-items: center;
+}
+
+.rb-container, .cb-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.heart, .heart:after, .heart:before {
+  background-color: var(--pink-color);
+  height: 14px;
+  position:absolute;
+  width: 14px;
+  
+}
+
+.heart {
+  top: 50%;
+  left: 0;
+  transform: rotate(-45deg);
+}
+.heart:after {
+  content: "";
+  border-radius: 7px;
+  top: 0px;
+  left: 50%;
+}
+.heart:before {
+  content: "";
+  border-radius: 50%;
+  top: -50%;
+  left: 0px;
+}
+
+.rb-container:hover input ~ .heart,
+.rb-container:hover input ~ .heart:after,
+.rb-container:hover input ~ .heart:before,
+.cb-container:hover input ~ .seed
+{
+  background-color: var(--hover-pink-color);
+  border-radius: 5px;
+}
+
+.rb-container input:checked~.heart,
+.rb-container input:checked~.heart:after,
+.rb-container input:checked~.heart:before,
+.cb-container input:checked~.seed
+{
+  background-color: var(--dark-pink-color);
+}
+
+.seed {
+  background-color: var(--pink-color);
+  height: 15px;
+  position:absolute;
+  width: 15px;
+  top: 25%;
+  left: 0;
+  border-radius: 3px;
+}
+
+.seed:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.cb-container input:checked ~ .seed:after {
+  display: block;
+}
+
+.cb-container .seed:after {
+  left: 50%;
+  top: -50%;
+  width: 4px;
+  height: 15px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  border-radius: 25%;
+}

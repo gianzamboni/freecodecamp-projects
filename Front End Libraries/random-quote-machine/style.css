@@ -1,0 +1,61 @@
+.color-transition {
+  transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.quote-component {
+  transition: opacity 300ms ease-in-out;
+}
+
+body {
+  background-color: #333;
+}
+
+#tweet-quote {
+  background-color: #ddd;
+  color: #333;
+}
+
+#quote-box {
+  background-color: #ddd;
+  border-radius: 2px;
+  left: 50%;
+  padding: 2em;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+}
+
+#author-box {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  text-align: right;
+}
+
+#button-box {
+  margin: 3em 2em 2em 2em;
+  heigth: 43px;
+}
+
+#new-quote {
+  background-color: #333;
+  border: none;
+  border-radius: 3px;
+  color: #ddd;
+  float: right;
+  padding: 0.5em;
+}
+#new-quote:focus {
+  outline: none;
+}
+
+#text {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+}
+
+@media (max-width: 728px) {
+  #quote-box {
+    width: 75vw;
+  }
+}

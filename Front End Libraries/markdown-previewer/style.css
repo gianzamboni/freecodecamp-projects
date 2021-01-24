@@ -1,0 +1,79 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+button, .title {
+  background-color: #2a1c2d;
+  border: none;
+  color: #d5dff2;
+  padding: 0.5em;
+  text-align: center;
+  font-weight: bold;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: #47304c;
+}
+
+.column-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  overflow: hidden;
+  width: inherit;
+}
+
+.row-container {
+  display: flex;
+  flex-direction: row;
+  max-height: 100vh;
+}
+
+#editor {
+  height: 100%;
+  background-color: #313a47;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2) inset;
+  border: none;
+  color: #d5dff2;
+  padding: 2em 4em 0 4em;
+  resize: none;
+}
+
+#preview {
+  background-color: #ddd;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5) inset;
+  max-height: 100vh;
+  overflow-y: scroll;
+  padding: 0 4em 0 4em;
+}
+#preview blockquote {
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 0.5em 1em 0.5em 1em;
+  text-align: center;
+}
+#preview h1:after {
+  content: ' ';
+  display: block;
+  border: 1px solid black;
+}
+#preview h2:after {
+  content: ' ';
+  display: block;
+  border: 0.5px solid black;
+}
+#preview img {
+  border-radius: 5px;
+}
+#preview pre {
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 1em;
+}

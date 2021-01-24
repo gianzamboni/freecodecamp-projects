@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Dosis'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<body class="flex-container flex-centered">
+<header class="flex-container flex-centered content-container">
+  <h1 id="title">What do you get?</h1>
+  <p id="description">Just a form with random questions</p>
+</header>
+<hr>
+<main class="content-container">
+  <form id="survey-form">
+      <label id="name-label" class="first-column-item" for="name">*First Name:</label>
+      <input type="text" id="name" name="name" placeholder="First Name" required></input>
+      
+      <label id="email-label" class="first-column-item"  for="email">*E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="somethin@something.com" required></input>
+      
+      <label id="number-label" class="first-column-item"  for="number">*Age:</label>
+      <input type="number" id="number" name="number"  placeholder="18" min="10" max="100"></input>
+
+      <label id="dropdown-label" class="first-column-item"  for="dropwdown">How is the wheather?:</label>
+      <select id="dropdown" name="dropdown">
+        <option value="sunny">Sunny</option>
+        <option value="cloudy">Cloudy</option>
+        <option value="rainy">Rainy</option>
+      </select>
+
+      <label class="first-column-item"  for="radios">How serious are you?</label>
+      <div>
+        <label class="rb-container">
+          Serious? wats that?
+          <input type="radio" name="radios" value="0" checked />
+          <span class="heart"></span>
+        </label>
+        <label class="rb-container">
+          Just enough to be decent
+          <input type="radio" name="radios"  value="1" />
+          <span class="heart"></span>
+        </label>
+        <label class="rb-container">
+          Really serious
+          <input type="radio" name="radios"  value="2"/>
+          <span class="heart"></span>
+        </label>
+      </div>
+      <label class="first-column-item"  for="pets">Do you have any of these pets?</label>
+      <div>
+        <label class="cb-container">
+          Dog
+          <input type="checkbox" name="pets"  value="dog" checked />
+          <span class="seed"></span>
+        </label>
+        <label class="cb-container">
+          Cat
+          <input type="checkbox" name="pets"  value="cat"/>
+          <span class="seed"></span>
+        </label>
+        <label class="cb-container">
+          Hamster
+          <input type="checkbox" name="pets"  value="hamster" />
+          <span class="seed"></span>
+        </label> 
+      </div>
+      <label class="first-column-item"  for="final-comment">Do you love watermelons? Why? Why not?</label>
+      <textarea name="final-comment"  placeholder="Yeah, this was a bad survey"></textarea>
+
+      <input type="submit" id="submit" ></input>
+</form>
+
+</main>
+<hr>
+<footer class="flex-container flex-centered content-container">This page was made by <a href="https://www.freecodecamp.com/gian150" target="_blank">Gian150</a></footer>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

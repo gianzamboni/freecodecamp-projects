@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    font-family: 'Roboto','Helvetica','Arial', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav {
+    background-color: hsl(218, 50%, 10%);
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.5);
+    color: hsl(227, 27%, 90%);
+    display: flex;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+nav img {
+    height: 64px;
+    padding: 0.1em 0.5em 0 1em;
+}
+
+nav span {
+    margin-top: 0.5em;
+    padding-bottom: 0.4em;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0 1em 0 auto;
+}
+
+nav ul li:hover {
+    background-color: hsl(158, 85%, 28%);
+;
+}
+
+li {
+    cursor: pointer;
+    padding: 0.5em 0.5em;
+}
+
+section {
+    display: flex;
+    font-size: 2em;
+    padding: 5em 0 5em 0;
+    width: 100%;
+
+}
+
+section span {
+    margin: 0 5em 0 5em;
+    text-align: center;
+    width: 50%;
+
+}
+
+section iframe {
+    border-style: none;
+    float: right;
+    height: 320px;
+    margin: 0 5em 0 0;
+    width: 640px;
+}
+
+.odd-section {
+    background-color: hsl(227, 27%, 90%);
+    color: hsl(218, 50%, 10%);
+}
+
+.kit-spec {
+    background-color: hsl(227, 27%, 90%)  ;
+    border: 2px solid hsl(158, 85%, 15%);
+    border-radius: 10px;
+    margin: 0 2.5vw 0 2.5vw;
+    width: 500px;
+    padding: 0.5em
+}
+
+.kit-spec span {
+    display: block;
+    margin: 1em auto auto auto;
+    text-align: center;
+    width: 100%;
+}
+
+.kit-spec ul {
+    color: hsl(218, 20%, 30%);
+    font-size: 0.5em;
+    min-height: 7em;
+}
+
+.kit-spec button{
+    background-color: hsl(49, 100%, 50%);
+    border: solid 1px ;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.75em;
+    margin: 0 0 2em 25%;
+    padding: 0.5em;
+    width: 50%;
+}
+
+.kit-spec button:hover {
+    background-color: hsl(49, 100%, 60%);
+}
+
+#section-contact-us {
+    align-items: center;
+    flex-flow:  column;
+    padding-bottom: 0.5em;
+    padding-top: 1em;
+}
+
+section input {
+    font-size: 1em;
+    margin-top: 1em;
+
+}
+
+.creator-info{
+    font-size: 0.8em;
+    margin-top: 5em;
+    opacity: 0.3;
+}
+
+@media(max-width:1048px) {
+    #section-product-trailer {
+        align-items: center;
+        flex-flow: column;
+    }
+
+    section span {
+        width: 75%;
+    }
+
+    section iframe {
+        margin: 0;
+        margin-top: 1em;
+        width: 75%;
+    }
+}
+
+@media(min-width:878px) and (max-width: 973px){
+    nav span {
+        font-size: 0.75em;
+    }
+}
+
+@media(min-width:530px) and (max-width:878px){
+    nav {
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav img {
+        display: none;
+    }
+
+    nav span {
+        font-size: 1em;
+        padding: 0;
+        margin: 0 0 0 25vw;
+        width: 75vw;
+    }
+
+    nav ul {
+        font-size: 0.5em;
+        width: 75%;
+        margin: 0 auto 0 25%;
+    }
+
+    nav li {
+        margin: 0 2em 0 0;
+    }
+
+    section {
+        align-items: center;
+        flex-flow: column wrap;
+    }
+
+    .kit-spec {
+        padding: 0;
+        margin: 0 0 1em 0;
+        width: 75%;
+    }
+}
+
+@media(max-width: 530px){
+    nav {
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav img {
+        display: none;
+    }
+
+    nav span {
+        font-size: 0.75em;
+        padding: 0;
+        margin: 0;
+        width: 75vw;
+    }
+
+    nav ul {
+        display: block;
+        font-size: 0.5em;
+        width: 75%;
+        margin: 0 auto 0 auto;
+    }
+
+    nav li {
+        text-align: center;
+        margin: 0 2em 0 0;
+    }
+
+    section {
+        align-items: center;
+        flex-flow: column wrap;
+    }
+
+    .kit-spec {
+        padding: 0;
+        margin: 0 0 1em 0;
+        width: 75%;
+    }
+
+    section span {
+        font-size: 0.65em;
+    }
+
+    section iframe {
+        height: 28vh;
+    }
+
+    section form {
+        display: flex;
+        flex-flow: column wrap;
+
+    }
+    section input {
+        font-size: 0.75em;
+    }
+
+    .creator-info {
+        font-size: 0.5em;
+    }
+}
